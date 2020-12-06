@@ -17,7 +17,8 @@ app
 
 // get pages
 app
-  .get('/', (req, res) => res.render('pages/index.ejs'))
+  .get('/', (req, res) => res.render('pages/index'))
+  .get('/', (req, res) => res.render('pages/commands'))
 
 // start server
 app.listen(port, () => { signale.success({prefix: '[Express]', message: `Website has been established on ${port}`}) })
